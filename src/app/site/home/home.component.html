@@ -1,3 +1,53 @@
-<p>
-  home works!
-</p>
+<div class="home" nz-row nzType="flex" nzJustify="center">
+  <div class="home-introduction" nz-col>
+    <h1>I'm Rodrigo Ibanez</h1>
+    <p>I'm a Software Engineer who is passionate about new technologies. Over the past 6 years, I've been developing hight scalable solutions by using the SOLID principles.</p>
+    <p>My present career aim is to work with the latest languages, frameworks, and arquitechtures because I enjoy learning and contribute in their development.</p>
+  </div>
+</div>
+
+<div class="home" nz-row nzType="flex" nzJustify="center" [nzGutter]="20">
+  <div nz-col>
+      <ng-template #coverTemplate>
+        <img alt="example" src="assets/img/profile.jpg"/>
+      </ng-template>
+      <nz-card style="width:240px" [nzCover]="coverTemplate">
+        <p>rsibanez89(at)gmail.com</p>
+        <p><a href='https://www.linkedin.com/in/rsibanez89' target='_blank'>linkedin</a></p>
+      </nz-card>
+  </div>
+  <div nz-col [nzMd]="8">
+    <h3>Working experience</h3>
+    <nz-timeline>
+      <nz-timeline-item>
+        <p><b>November 2016 - now</b> | Software engineer at ROKT, Sydney, Australia.</p>
+      </nz-timeline-item>
+      <nz-timeline-item>
+        <p><b>2013 - June 2015</b> | Scholarship holder for doing a Ph.D. in Computer Sciences, granted by the National Agency for Science and Technology Promotion (ANPCyT), Argentina.</p>
+      </nz-timeline-item>
+      <nz-timeline-item>
+        <p><b>2015 - June 2015</b> | Teaching assistant at Facultad de Ciencias Exactas, UNICEN University, Tandil, Buenos Aires, Argentina. Course: Software Engineering</p>
+      </nz-timeline-item>
+      <nz-timeline-item>
+        <p><b>2014 - 2015</b> | Teaching assistant ad honorem at Facultad de Ciencias Exactas, UNICEN University, Tandil, Buenos Aires, Argentina. Course: Software Engineering Workshop</p>
+      </nz-timeline-item>
+      <nz-timeline-item>
+        <p><b>2013 - 2014</b> | Teaching assistant at Facultad de Ciencias Exactas, UNICEN University, Tandil, Buenos Aires, Argentina. Course: Introduction to System Architecture</p>
+      </nz-timeline-item>
+    </nz-timeline>
+    
+    <h3>Education</h3>
+    <nz-timeline>
+      <nz-timeline-item>
+        <p><b>2012 - June 2015</b> | Ph.D. Student in Computer Sciences, UNICEN University, Tandil, Buenos Aires, Argentina.</p>
+      </nz-timeline-item>
+      <nz-timeline-item>
+        <p><b>2010 - 2012</b> | Systems Engineering, UNICEN University, Tandil, Buenos Aires, Argentina.</p>
+      </nz-timeline-item>
+      <nz-timeline-item>
+        <p><b>2007 - 2010</b> | Programmer Analyst, UNICEN University, Tandil, Buenos Aires, Argentina.</p>
+      </nz-timeline-item>
+    </nz-timeline>
+  </div>
+</div>
+  
