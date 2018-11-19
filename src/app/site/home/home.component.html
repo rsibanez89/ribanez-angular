@@ -1,22 +1,23 @@
-<div class="home" nz-row nzType="flex" nzJustify="center">
-  <div class="home-introduction" nz-col>
+<div class="home-introduction" nz-row nzType="flex" nzJustify="center">
+  <div class="home-introduction__text" nz-col>
     <h1>I'm Rodrigo Ibanez</h1>
     <p>I'm a Software Engineer who is passionate about new technologies. Over the past 6 years, I've been developing hight scalable solutions by using the SOLID principles.</p>
     <p>My present career aim is to work with the latest languages, frameworks, and arquitechtures because I enjoy learning and contribute in their development.</p>
   </div>
 </div>
 
-<div class="home" nz-row nzType="flex" nzJustify="center" [nzGutter]="20">
+<div class="home-body" nz-row nzType="flex" nzJustify="center" [nzGutter]="10">
   <div nz-col>
       <ng-template #coverTemplate>
         <img alt="example" src="assets/img/profile.jpg"/>
       </ng-template>
-      <nz-card style="width:240px" [nzCover]="coverTemplate">
+      <nz-card class="home-body__card" [nzCover]="coverTemplate">
         <p>rsibanez89(at)gmail.com</p>
-        <p><a href='https://www.linkedin.com/in/rsibanez89' target='_blank'>linkedin</a></p>
+        <p><a href='https://github.com/rsibanez89/' target='_blank'><i nz-icon type="github"></i> github</a></p>
+        <p><a href='https://www.linkedin.com/in/rsibanez89' target='_blank'><i nz-icon type="linkedin"></i> linkedin</a></p>
       </nz-card>
   </div>
-  <div nz-col [nzMd]="8">
+  <div class="home-body__timeline" nz-col [nzMd]="8">
     <h3>Working experience</h3>
     <nz-timeline>
       <nz-timeline-item>

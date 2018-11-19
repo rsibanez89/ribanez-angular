@@ -27,9 +27,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Build for deployment
 
-* Run `ng build --prod --aot` to build the project. The build artifacts will be stored in the `dist/` directory.
+* Run `ng build --configuration=production` to build the project. The build artifacts will be stored in the `dist/` directory.
 
 ## Deploy to S3
 
  * Run `aws s3 cp ./dist/ribanez s3://ribanez --recursive`
+ * Run `aws s3 cp ./dist/ribanez s3://ribanez --recursive --exclude "assets/*" --include "assets/img/*"`
+ * Run `aws s3 cp ./dist/ribanez s3://ribanez --recursive --exclude "*" --include "runtime.06daa30a2963fa413676.js"`
  * Go to http://jclaraz.s3-website-sa-east-1.amazonaws.com

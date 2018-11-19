@@ -1,7 +1,28 @@
 .home {
-  margin-top: 20px;
 
   &-introduction {
-    text-align: center;
+    margin-top: 20px;
+
+    &__text {
+      text-align: center;
+    }
+  }
+
+  &-body {
+    
+    &__card {
+      width: 240px;
+      
+      p {
+        i {
+          font-size: medium;
+        }
+      }
+    }
+
+    &__timeline {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
   }
 }
