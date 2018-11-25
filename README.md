@@ -34,4 +34,4 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
  * Run `aws s3 cp ./dist/ribanez s3://ribanez --recursive`
  * Run `aws s3 cp ./dist/ribanez s3://ribanez --recursive --exclude "assets/*" --include "assets/img/*"`
  * Run `aws s3 cp ./dist/ribanez s3://ribanez --recursive --exclude "*" --include "runtime.06daa30a2963fa413676.js"`
- * Go to http://jclaraz.s3-website-sa-east-1.amazonaws.com
+ * Go to http://ribanez.s3-website.us-east-2.amazonaws.com
