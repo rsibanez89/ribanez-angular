@@ -31,7 +31,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Deploy to S3
 
- * Run `aws s3 cp ./dist/ribanez s3://ribanez --recursive`
- * Run `aws s3 cp ./dist/ribanez s3://ribanez --recursive --exclude "assets/*" --include "assets/img/*"`
- * Run `aws s3 cp ./dist/ribanez s3://ribanez --recursive --exclude "*" --include "runtime.06daa30a2963fa413676.js"`
+ * Run `npm run deploy`, which internally will run `aws s3 cp ./dist/ribanez s3://ribanez --recursive --exclude "assets/*"` 
+ * Or Run `npm run deploy:all`, which internally will run `aws s3 cp ./dist/ribanez s3://ribanez --recursive`
+ * Or Run `aws s3 cp ./dist/ribanez s3://ribanez --recursive --exclude "*" --include "runtime.06daa30a2963fa413676.js"`
  * Go to http://ribanez.s3-website.us-east-2.amazonaws.com
