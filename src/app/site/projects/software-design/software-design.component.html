@@ -1,0 +1,38 @@
+<div class="page-content">
+  <h1>Software design, final project</h1>
+  <p>
+    The goal for this porject was to create an application that allow users to define and recognize gestures.
+    To do this, we first created an application that allowed us to record the movements of a person as a collection of 3D poins, each of them representing a body joint in the space.
+    Then, we were able to select the body joints and define rules about them, e.g., "hand 20cm over shoulder", or "knee 1cm over hip"
+    These rules allowed use recognize static postures. Finally we defined a gesture as a sequence of static postures.
+  </p>
+  
+  <div class="page-content--img" nz-row nzType="flex" nzJustify="center">
+    <div nz-col>
+      <img src="assets/img/softwaredesign/menu.png"/>
+      <p>Application: menu</p>
+    </div>
+  </div>
+
+  <div class="page-content--img" nz-row nzType="flex" nzJustify="center">
+    <div nz-col>
+      <img src="assets/img/softwaredesign/gesture-creation.png"/>
+      <p>Application: gesture creation</p>
+    </div>
+  </div>
+
+  <h2>Devices and technologies used</h2>
+  <div class="bullets">
+    <p><nz-badge nzStatus="success" nzText="Microsoft Kinect device for the 3D joint carpture"></nz-badge></p>
+    <p><nz-badge nzStatus="success" nzText="Microsoft Kinect SDK"></nz-badge></p>
+    <p><nz-badge nzStatus="success" nzText="Microsoft XNA for rendering the 3D environment"></nz-badge></p>
+    <p><nz-badge nzStatus="success" nzText="DB4O for storing recorded gestures"></nz-badge></p>    
+  </div>
+  
+  <h2>Source code</h2>
+  <div class="bullets">
+    <p><nz-badge nzStatus="processing"></nz-badge><a href="https://github.com/rsibanez89/fantastic-four-kinect">https://github.com/rsibanez89/fantastic-four-kinect</a></p> 
+  </div>
+</div>
+    
+    

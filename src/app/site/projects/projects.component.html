@@ -1,3 +1,10 @@
-<p>
-  projects works!
-</p>
+<div class="page-content">
+  <nz-card
+    nzTitle="Sofware design, final project"
+    [nzExtra]="seeMoreSoftwareDesign">
+    <p>Application that allowed user recod movements and then recognize static postures based on rules.</p>
+  </nz-card>
+  <ng-template #seeMoreSoftwareDesign>
+    <a routerLink="./softwaredesign">See more...</a>
+  </ng-template>
+</div>

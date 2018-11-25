@@ -1,0 +1,21 @@
+.page-content {
+  &--img {
+    text-align: center;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .bullets {
+    margin-left: 20px;
+
+    p {
+      margin: 0;
+    }
+
+    a {
+      vertical-align: text-top;
+    }
+  }
+}

@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './components/header/header.component';
 import { NgZorroAntdModule } from 'ng-zorro-antd';
+import { BodyComponent } from './components/body/body.component';
 
 @NgModule({
   imports: [
@@ -9,10 +10,12 @@ import { NgZorroAntdModule } from 'ng-zorro-antd';
     NgZorroAntdModule,
   ],
   declarations: [
-    HeaderComponent
+    HeaderComponent,
+    BodyComponent,
   ],
   exports: [
-    HeaderComponent 
+    HeaderComponent,
+    BodyComponent,
   ]
 })
 export class SharedModule { }
