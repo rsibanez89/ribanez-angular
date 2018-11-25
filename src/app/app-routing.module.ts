@@ -14,7 +14,7 @@ const routes: Routes = [
     path: 'projects',
     children: [
       {
-        path: 'softwaredesign',
+        path: 'software-design',
         component: SoftwareDesignComponent
       },
       {
