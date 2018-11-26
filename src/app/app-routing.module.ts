@@ -18,6 +18,10 @@ const routes: Routes = [
         component: SoftwareDesignComponent
       },
       {
+        path: 'natural-user-interface',
+        component: SoftwareDesignComponent
+      },
+      {
         path: '',
         component: ProjectsComponent
       },
