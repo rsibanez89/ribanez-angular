@@ -4,6 +4,7 @@ import { HomeComponent } from './site/home/home.component';
 import { BlogComponent } from './site/blog/blog.component';
 import { ProjectsComponent } from './site/projects/projects.component';
 import { SoftwareDesignComponent } from './site/projects/software-design/software-design.component';
+import { NaturalUserInterfaceComponent } from './site/projects/natural-user-interface/natural-user-interface.component';
 
 const routes: Routes = [
   {
@@ -19,7 +20,7 @@ const routes: Routes = [
       },
       {
         path: 'natural-user-interface',
-        component: SoftwareDesignComponent
+        component: NaturalUserInterfaceComponent
       },
       {
         path: '',

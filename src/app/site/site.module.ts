@@ -6,6 +6,7 @@ import { BlogComponent } from './blog/blog.component';
 import { NgZorroAntdModule } from 'ng-zorro-antd';
 import { SoftwareDesignComponent } from './projects/software-design/software-design.component';
 import { RouterModule } from '@angular/router';
+import { NaturalUserInterfaceComponent } from './projects/natural-user-interface/natural-user-interface.component';
 
 @NgModule({
   imports: [
@@ -17,7 +18,8 @@ import { RouterModule } from '@angular/router';
     HomeComponent,
     ProjectsComponent,
     BlogComponent,
-    SoftwareDesignComponent
+    SoftwareDesignComponent,
+    NaturalUserInterfaceComponent
   ],
   exports: [
     HomeComponent
