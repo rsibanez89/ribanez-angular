@@ -7,6 +7,7 @@ import { NgZorroAntdModule } from 'ng-zorro-antd';
 import { SoftwareDesignComponent } from './projects/software-design/software-design.component';
 import { RouterModule } from '@angular/router';
 import { NaturalUserInterfaceComponent } from './projects/natural-user-interface/natural-user-interface.component';
+import { SqlServerComponent } from './blog/sql-server/sql-server.component';
 
 @NgModule({
   imports: [
@@ -19,7 +20,8 @@ import { NaturalUserInterfaceComponent } from './projects/natural-user-interface
     ProjectsComponent,
     BlogComponent,
     SoftwareDesignComponent,
-    NaturalUserInterfaceComponent
+    NaturalUserInterfaceComponent,
+    SqlServerComponent
   ],
   exports: [
     HomeComponent

@@ -1,3 +1,12 @@
-<p>
-  blog works!
-</p>
+<div class="page-content">
+  <div class="page-content__list-element">
+      <nz-card
+        nzTitle="SQL Server"
+        [nzExtra]="seeMoreSQLServer">
+        <p>How to... and useful tricks on SQL server</p>
+      </nz-card>
+      <ng-template #seeMoreSQLServer>
+        <a routerLink="./sql-server">See more...</a>
+      </ng-template>
+    </div>
+  </div>
