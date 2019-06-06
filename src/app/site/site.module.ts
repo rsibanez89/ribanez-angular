@@ -8,11 +8,13 @@ import { SoftwareDesignComponent } from './projects/software-design/software-des
 import { RouterModule } from '@angular/router';
 import { NaturalUserInterfaceComponent } from './projects/natural-user-interface/natural-user-interface.component';
 import { SqlServerComponent } from './blog/sql-server/sql-server.component';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   imports: [
     CommonModule,
     RouterModule,
+    SharedModule,
     NgZorroAntdModule
   ],
   declarations: [

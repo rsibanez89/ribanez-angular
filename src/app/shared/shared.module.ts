@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './components/header/header.component';
 import { NgZorroAntdModule } from 'ng-zorro-antd';
 import { BodyComponent } from './components/body/body.component';
+import { GistFrameComponent } from './components/gist-frame/gist-frame.component';
 
 @NgModule({
   imports: [
@@ -12,10 +13,12 @@ import { BodyComponent } from './components/body/body.component';
   declarations: [
     HeaderComponent,
     BodyComponent,
+    GistFrameComponent,
   ],
   exports: [
     HeaderComponent,
     BodyComponent,
+    GistFrameComponent,
   ]
 })
 export class SharedModule { }
