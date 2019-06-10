@@ -1,49 +1,50 @@
 import {
   Component,
-  AfterViewInit,
   ElementRef,
-  ViewChild,
   Input,
-  ViewEncapsulation,
   OnInit,
-  Inject
+  Inject,
 } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'ri-gist-frame',
-  template: ``,
+  template: '',
+  styles: [`
+    ::ng-deep .gist {
+      width: 100%;
+    }
+  `]
 })
-export class GistFrameComponent implements AfterViewInit {
+export class GistFrameComponent implements OnInit {
 
-  //@ViewChild('iframe') iframe: ElementRef;
   @Input() gistId: string;
-  @Input() file: string;
 
-  constructor(@Inject(DOCUMENT) private document, private hostElement: ElementRef){
-
+  constructor(@Inject(DOCUMENT) private document, private hostElement: ElementRef) {
   }
 
-  ngAfterViewInit() {
-    // let doc = this.iframe.nativeElement.contentDocument;
-    // let content = `
-    //   <html>
-    //     <head></head>
-    //     <body>
-    //       <script type="text/javascript" src="https://gist.github.com/rsibanez89/${this.gistId}.js"></script>
-    //     </body>
-    //   </html>
-    // `;
-    // doc.open();
-    // doc.write(content);
-    // doc.close();
+  ngOnInit() {
+    // Override document.write function
+    var oldWrite = this.document.write;
+    this.document.write = (text: string) => {
+      //text = text.replace(/<link.+>/,'')
+      this.hostElement.nativeElement.innerHTML += text;
+      console.log(text);
+    }
 
+    var script = this.appendScriptNode();
+
+    // Undo override document.write function
+    script.onloadend = () => {
+      this.document.write = oldWrite;
+    }
+  }
+
+  appendScriptNode(): HTMLScriptElement {
     let node = this.document.createElement('script');
-        node.src = `https://gist.github.com/rsibanez89/${this.gistId}.js`;
-        node.async = true;
-        //document.getElementsByTagName('ri-gist-frame')[0].appendChild(node);
-
+    node.type = 'text/javascript';
+    node.src = `https://gist.github.com/rsibanez89/${this.gistId}.js`;
     this.hostElement.nativeElement.appendChild(node);
+    return node;
   }
-
 }
