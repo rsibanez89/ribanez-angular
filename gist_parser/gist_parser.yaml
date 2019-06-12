@@ -1,0 +1,26 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Get Github Gist
+
+Resources:
+  GistLambdaFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: gist_parser
+      CodeUri: .
+      Handler: gist_parser.handle
+      Runtime: python2.7
+      Timeout: 300
+      MemorySize: 128
+      Events:
+        GistLambdaGet:
+          Type: Api
+          Properties:
+            Path: /
+            Method: get
+
+Outputs:
+  GistLambdaURL:
+    Value: !Sub https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/api/
+  GistLambdaArn:
+    Value: !GetAtt "GistLambdaFunction.Arn"
