@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SqlServerComponent } from './sql-server.component';
+import { AngularTipsComponent } from './angular-tips.component';
 
-describe('SqlServerComponent', () => {
-  let component: SqlServerComponent;
-  let fixture: ComponentFixture<SqlServerComponent>;
+describe('AngularTipsComponent', () => {
+  let component: AngularTipsComponent;
+  let fixture: ComponentFixture<AngularTipsComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SqlServerComponent ]
+      declarations: [ AngularTipsComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SqlServerComponent);
+    fixture = TestBed.createComponent(AngularTipsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

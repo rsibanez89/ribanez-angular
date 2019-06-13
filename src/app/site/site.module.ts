@@ -7,15 +7,18 @@ import { NgZorroAntdModule } from 'ng-zorro-antd';
 import { SoftwareDesignComponent } from './projects/software-design/software-design.component';
 import { RouterModule } from '@angular/router';
 import { NaturalUserInterfaceComponent } from './projects/natural-user-interface/natural-user-interface.component';
-import { SqlServerComponent } from './blog/sql-server/sql-server.component';
 import { SharedModule } from '../shared/shared.module';
+import { NgxGistModule } from 'ngx-gist/dist/ngx-gist.module';
+import { SqlServerTipsComponent } from './blog/sql-server-tips/sql-server-tips.component';
+import { AngularTipsComponent } from './blog/angular-tips/angular-tips.component';
 
 @NgModule({
   imports: [
     CommonModule,
     RouterModule,
     SharedModule,
-    NgZorroAntdModule
+    NgZorroAntdModule,
+    NgxGistModule
   ],
   declarations: [
     HomeComponent,
@@ -23,7 +26,8 @@ import { SharedModule } from '../shared/shared.module';
     BlogComponent,
     SoftwareDesignComponent,
     NaturalUserInterfaceComponent,
-    SqlServerComponent
+    SqlServerTipsComponent,
+    AngularTipsComponent
   ],
   exports: [
     HomeComponent

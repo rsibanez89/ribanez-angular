@@ -1,12 +1,23 @@
-<div class="page-content">
-  <div class="page-content__list-element">
-      <nz-card
-        nzTitle="SQL Server"
-        [nzExtra]="seeMoreSQLServer">
-        <p>How to... and useful tricks on SQL server</p>
-      </nz-card>
-      <ng-template #seeMoreSQLServer>
-        <a routerLink="./sql-server">See more...</a>
-      </ng-template>
-    </div>
+<div class="page-content" nz-row nzType="flex" [nzGutter]="16">
+  <div class="page-content__list-element" nz-col nzSpan="12">
+    <nz-card
+      nzTitle="SQL Server tips"
+      [nzExtra]="seeMoreSQLServerTips">
+      <p>How to... and useful tricks for SQL server</p>
+    </nz-card>
+    <ng-template #seeMoreSQLServerTips>
+      <a routerLink="./sql-server-tips">See more...</a>
+    </ng-template>
   </div>
+
+  <div class="page-content__list-element" nz-col nzSpan="12">
+    <nz-card
+      nzTitle="Angular tips"
+      [nzExtra]="seeMoreAngularTips">
+      <p>How to... and useful tricks for Angular 2+</p>
+    </nz-card>
+    <ng-template #seeMoreAngularTips>
+      <a routerLink="./angular-tips">See more...</a>
+    </ng-template>
+  </div>
+</div>
