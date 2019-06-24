@@ -26,7 +26,7 @@ export class GistFrameComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.http.get<GistView>(`https://ya13n2nov3.execute-api.us-east-2.amazonaws.com/Prod/?gistId=${this.gistId}&gistAccount=${this.gistAccount}`)
+    this.http.get<GistView>(`https://utilapis.com/?gistId=${this.gistId}&gistAccount=${this.gistAccount}`)
       .subscribe(gistView => {
         this.hostElement.nativeElement.innerHTML = gistView.gistCss + gistView.gistContent;
       });
